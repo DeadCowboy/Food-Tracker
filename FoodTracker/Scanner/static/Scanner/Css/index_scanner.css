@@ -1,0 +1,35 @@
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(250, 213, 134);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#add-new-item-container {
+    background-color: rgb(64, 198, 64);
+}
+
+#remove-old-item-container{
+   background-color: rgb(200, 75, 75);
+}
+
+.main-button-container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    margin: 0.5em;
+    padding: 0.5em;
+    color: inherit;
+    text-decoration: inherit;
+    text-align: center;
+    border-radius: 1em;
+    height: auto;
+}

@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="{% static 'Scanner/assets/favico.png' %}">
+    <!-- <link rel="stylesheet" href="{% static 'Scanner/Css/bootstrap.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'Scanner/Css/index_scanner.css' %}?{% now 'U'%}">
+    <title>Scan Your Items</title>
+    <!-- Get Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <a href="{% url 'addItems' %}" class="main-button-container" id="add-new-item-container">
+        <h1> Hinzufügen</h1>
+    </a>
+    <a href="{% url 'removeItems' %}" class="main-button-container" id="remove-old-item-container">
+        <h1>Entfernen</h1>
+    </a>
+</body>
+</html>
